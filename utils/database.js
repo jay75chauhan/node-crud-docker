@@ -1,6 +1,6 @@
-const Sequlizer = require("Sequlizer");
+const Sequelize = require("sequelize");
 
-const sequlizer = new Sequlizer(
+const sequelize = new Sequelize(
   process.env.PG_DB,
   process.env.PG_USER,
   process.env.PG_PASSWORD,
@@ -10,4 +10,4 @@ const sequlizer = new Sequlizer(
   }
 );
 
-module.exports = sequlizer;
+module.exports = sequelize;
